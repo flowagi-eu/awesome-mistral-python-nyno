@@ -22,9 +22,23 @@ uv run examples-cli/ai-mistral-image-gen/command.py test-data/ai-mistral-image-g
 - For Windows: [How to run Nyno on Windows using Docker Desktop](https://nyno.dev/how-to-run-nyno-on-windows-using-docker-desktop)
 - For Linux: [Nyno Core GUI AI Workflow Builder & Engine](https://github.com/flowagi-eu/nyno)
 
-#### Nyno Python Driver
-- [Nyno Python Driver (PyPi)](https://github.com/flowagi-eu/nyno-python-driver)
+#### Run Any .nyno File in Python:
+```
+from nynoclient import NynoClient
+client = NynoClient(
+    credentials="change_me",
+    host="127.0.0.1",
+    port=9024,
+)
 
+with open('your-nyno-file.nyno','r') as r:
+    content = r.read()
+
+result = client.run_nyno(content)
+print(result) # { "status": "OK", "execution": [...] }
+```
+- [Nyno Python Driver (PyPi)](https://github.com/flowagi-eu/nyno-python-driver)
+- [Learn to use Powerful Nyno (AI) Workflows build using a GUI in Python!](https://github.com/flowagi-eu/learn-python-nyno-with-examples)
 
 ## Add Your Awesome Mistral-Python-Nyno Example:
 - [Submit a Post to the Nyno Subreddit](https://reddit.com/r/Nyno)

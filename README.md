@@ -1,4 +1,8 @@
 ### For the Python + Mistral devs:
+
+![Mistral + Python Examples](/screenshot.png)
+
+
 - /examples-cli/ai-mistral-text/command.py (most common use case)
 - /examples-cli/ai-mistral-embeddings/command.py (for vector database)
 - /examples-cli/ai-mistral-image-gen/command.py (image generation)
@@ -7,7 +11,7 @@ Usage:
 ```
 uv init # modern Python package manager https://github.com/astral-sh/uv
 uv add mistralai # install sdk for ai-mistral-image-gen
-uv run /examples-cli/ai-mistral-image-gen/command.py test-data/ai-mistral-image-gen.json
+uv run examples-cli/ai-mistral-image-gen/command.py test-data/ai-mistral-image-gen.json
 ```
 
 

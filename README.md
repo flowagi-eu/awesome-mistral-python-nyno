@@ -1,7 +1,7 @@
 ### For the backend dev:
 If you're here for Python examples for Mistral see
 - /examples-mistral-python/mistral-text.py (most common use case)
-- /examples-mistral-python/mistral-embeddings.py (for vector database / computations)
+- /examples-mistral-python/mistral-embeddings.py (for vector database)
 
 
 ### For the low-code builder:
